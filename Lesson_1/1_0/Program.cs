@@ -2,7 +2,7 @@
 
 // 0. напишите программу, которая на вход принимает число и выдает его квадрат (умножает само на себя)
 
-// string s_a = Console.ReadLine()!;
+string s_a = Console.ReadLine()!;
 int a = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine(a * a);
