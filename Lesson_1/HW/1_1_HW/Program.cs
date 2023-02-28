@@ -3,10 +3,10 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-string a = Console.ReadLine()!;
-string b = Console.ReadLine()!;
-int a = int.Parse(a);
-int b = int.Parse(a);
+string s_a = Console.ReadLine()!;
+string s_b = Console.ReadLine()!;
+int a = int.Parse(s_a);
+int b = int.Parse(s_b);
 
-if (a>b) Console.Write("max = "+a);
-    else Console.Write("max = "+b);
+if (a > b) Console.Write("max = " + a);
+    else Console.Write("max = " + b);
