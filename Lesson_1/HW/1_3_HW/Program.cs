@@ -5,7 +5,7 @@
 // 7 -> нет
 
 Console.Write("Число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int remDiv = number % 2;
 
 if(remDiv == 0)
