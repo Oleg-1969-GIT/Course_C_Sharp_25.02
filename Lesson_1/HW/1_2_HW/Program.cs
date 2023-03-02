@@ -6,10 +6,13 @@
 string s_a = Console.ReadLine()!;
 string s_b = Console.ReadLine()!;
 string s_c = Console.ReadLine()!;
-
 int a = int.Parse(s_a);
 int b = int.Parse(s_b);
-int b = int.Parse(s_b);
+int c = int.Parse(s_c);
 
-if (a > b) Console.Write("max = " + a);
-    else Console.Write("max = " + b);
+int Max = a;
+{
+if (b > Max) Max = b;
+else if (c > Max) Max = c;
+}
+Console.WriteLine("Max = " + Max);
