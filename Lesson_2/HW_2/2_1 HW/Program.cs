@@ -4,8 +4,6 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Последняя цифра: "+result);
-
 int TakeNum(int num)
 {
     Console.WriteLine("Число: "+num);
