@@ -3,7 +3,7 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-void Kvad(int num)
+void Kube(int num)
 {
     for (int i = 1; i <= num; i++)
     {
@@ -11,4 +11,4 @@ void Kvad(int num)
     }
 }
 int x = int.Parse(Console.ReadLine()!);
-Kvad(x);
+Kube(x);
