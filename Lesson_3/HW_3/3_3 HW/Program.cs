@@ -5,7 +5,8 @@
 
 void Kube(int num)
 {
-    for (int i = 1; i <= num; i++)
+    int abs_num = Math.Abs(num);
+    for (int i = 1; i <= abs_num; i++)
     {
         Console.WriteLine($"-> " + i * i * i);
     }
