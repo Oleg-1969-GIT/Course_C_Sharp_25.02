@@ -8,8 +8,8 @@ string s_b = Console.ReadLine()!;
 int a = int.Parse(s_a);
 int b = int.Parse(s_b);
 
-if (a > b) Console.Write("max = " + a);
-    else Console.Write("max = " + b);
-
-if (a > b) Console.Write("max = " + a);
-    else Console.Write("max = " + b);
+if (a > b)
+{
+    Console.WriteLine("max = " + a);
+}
+else Console.WriteLine("max = " + b);
