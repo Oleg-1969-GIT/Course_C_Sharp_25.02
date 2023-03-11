@@ -1,6 +1,6 @@
 ﻿// 1. Напишите программу, которая по заданному номеру четверти,
 //    показывает диапазон возможных координат точек в этой четверти (x и y).
-void Quarters(int x, int y)
+void Quarters(int num)
 {
     if (num == 1 )
         Console.WriteLine("x > 0, y > 0");
@@ -13,5 +13,5 @@ void Quarters(int x, int y)
     else
         Console.WriteLine("ERR");
 }
-int num_1 = int.Parse()!;
-Quarters(num_1);
+int num = int.Parse(Console.ReadLine()!);
+Quarters(num);
