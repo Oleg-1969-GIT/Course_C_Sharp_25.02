@@ -13,4 +13,4 @@ int Degree(int A, int B)
 }
 int A = int.Parse(Console.ReadLine()!);
 int B = int.Parse(Console.ReadLine()!);
-Console.WriteLine($" {A} {B}  -> {Degree(A, B)}");
+Console.WriteLine($" {A}, {B}  -> {Degree(A, B)}");
