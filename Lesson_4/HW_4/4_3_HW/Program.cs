@@ -11,6 +11,6 @@ void Massiv(int length)
         R[i] = new Random().Next(10);
         Console.Write(" : " + R[i]);
     }
+    Console.WriteLine();
 }
 Massiv(int.Parse(Console.ReadLine()!));
-Console.WriteLine();
