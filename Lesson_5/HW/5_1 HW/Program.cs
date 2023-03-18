@@ -18,12 +18,13 @@ int[] MassNums(int size, int from, int to)
         arr[i] = new Random().Next(99, 999); // заменил: "from" -> 99, "to" -> 999
     return arr;
 }
+
 int SumPosNeg(int[] arr)
 {
     int count = 0;
-    for (int i = 0; i <= arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] / 2 % 2 == 0)
+        if (arr[i] % 2 == 0)
             count++;
     }
     return count;
@@ -33,4 +34,4 @@ int start = int.Parse(Console.ReadLine()!);
 int stop = int.Parse(Console.ReadLine()!);
 int[] mass = MassNums(num, start, stop);
 Print(mass);
-Console.WriteLine(SumPosNeg(mass));
+Console.WriteLine($"Кол-во чётных элементов: {SumPosNeg(mass)}");
