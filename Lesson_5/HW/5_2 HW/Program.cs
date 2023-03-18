@@ -19,7 +19,7 @@ int[] MassNums(int size, int from, int to)
         arr[i] = new Random().Next(from, to);
     return arr;
 }
-int SumPosNeg(int[] arr);
+int SumPosNeg(int[] arr)
 {
     int sum_neg = 0;
     for (int i = 0; i < arr.Length; i = i + 2)
@@ -27,7 +27,7 @@ int SumPosNeg(int[] arr);
         sum_neg += arr[i];
     }
     return sum_neg;
-    Console.WriteLine(sum_neg);
+    // Console.WriteLine(sum_neg);
 }
 int num = int.Parse(Console.ReadLine()!);
 int start = int.Parse(Console.ReadLine()!);
@@ -35,4 +35,4 @@ int stop = int.Parse(Console.ReadLine()!);
 
 int[] mass = MassNums(num, start, stop);
 Print(mass);
-SumPosNeg(mass);
+Console.WriteLine($"Сумма элементов на нечетных позициях= {SumPosNeg(mass)}");
