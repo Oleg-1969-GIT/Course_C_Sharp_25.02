@@ -25,7 +25,7 @@ double[,] MassNums(int row, int column, double from, double to)
 
     for (int i = 0; i < row; i++)
         for (int j = 0; j < column; j++)
-            arr[i, j] = Math.Round(random.NextDouble()*10, 1);
+            arr[i, j] = Math.Abs(Math.Round(random.NextDouble()*10, 1));
 
     return arr;
 }
