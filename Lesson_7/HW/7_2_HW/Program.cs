@@ -30,6 +30,7 @@ Console.WriteLine("Строка?");
 int r = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Столбец?");
 int c = int.Parse(Console.ReadLine()!);
+
 if (r > row || c > column)
     Console.WriteLine("Нет такого элемента");
 else
