@@ -6,10 +6,8 @@
 void ValuesSet(int M, int N)
 {
     if (N < M) return;
+    ValuesSet(M, N - 1);
     if (N % 2 == 0)
-    ValuesSet(M, N - 2);
-        else N = N - 1;
-        ValuesSet(M, N - 2);
     Console.Write($"{N}, ");
 }
 Console.WriteLine();
